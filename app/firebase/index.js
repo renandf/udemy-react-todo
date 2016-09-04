@@ -2,12 +2,12 @@ import firebase from 'firebase';
 
 try {
   var config = {
-    apiKey: "AIzaSyAX7eJrD1daaCP9_MTzoEypcirE4ZHRrg4",
-    authDomain: "udemy-react-todo-app.firebaseapp.com",
-    databaseURL: "https://udemy-react-todo-app.firebaseio.com",
-    storageBucket: "",
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET,
   };
-  
+
   firebase.initializeApp(config);
 } catch (e) {
 
